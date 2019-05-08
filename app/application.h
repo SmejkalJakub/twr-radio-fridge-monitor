@@ -5,7 +5,6 @@
 #define VERSION "vdev"
 #endif
 
-
 #include <bcl.h>
 
 typedef struct
@@ -16,4 +15,4 @@ typedef struct
 
 } event_param_t;
 
-#endif
+#endif // _APPLICATION_H
