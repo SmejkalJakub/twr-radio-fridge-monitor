@@ -1,1 +1,1 @@
-MP3 player for BigClown Core Module.
+Fridge monitor with open door alarm.
