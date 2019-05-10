@@ -38,17 +38,6 @@ bc_tmp112_t tmp112;
 bc_button_t button;
 uint16_t button_event_count = 0;
 
-void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
-{
-    (void) self;
-    (void) event_param;
-
-    if (event == BC_BUTTON_EVENT_PRESS)
-    {
-        bc_led_pulse(&led, 100);
-    }
-}
-
 void battery_event_handler(bc_module_battery_event_t event, void *event_param)
 {
     (void) event_param;
@@ -154,6 +143,7 @@ void application_init(void)
 
     // Initialize radio
     bc_radio_init(BC_RADIO_MODE_NODE_SLEEPING);
+    bc_radio_pairing_request("fridge-monitor", VERSION);
 
     // Initialize button
     bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
@@ -173,7 +163,6 @@ void application_init(void)
     bc_module_climate_set_update_interval_barometer(BAROMETER_UPDATE_SERVICE_INTERVAL);
     bc_module_climate_measure_all_sensors();
 
-    bc_radio_pairing_request("fridge-monitor", VERSION);
 
     bc_scheduler_register(switch_to_normal_mode_task, NULL, SERVICE_INTERVAL_INTERVAL);
 }
