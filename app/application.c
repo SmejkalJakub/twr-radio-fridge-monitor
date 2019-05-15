@@ -145,10 +145,6 @@ void application_init(void)
     bc_radio_init(BC_RADIO_MODE_NODE_SLEEPING);
     bc_radio_pairing_request("fridge-monitor", VERSION);
 
-    // Initialize button
-    bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-    bc_button_set_event_handler(&button, button_event_handler, &button_event_count);
-
     // Initialize battery
     bc_module_battery_init();
     bc_module_battery_set_event_handler(battery_event_handler, NULL);
