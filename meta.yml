@@ -1,0 +1,9 @@
+article: https://www.hackster.io/jakub-smejkal/bigclown-smart-fridge-monitor-17e9bd
+video: https://www.youtube.com/watch?v=tyyjO0GoyNA
+images:
+  - title:
+    url: https://www.bigclown.com/kits/climate-monitor/main.png
+assembly:
+  - name: BigClown Climate Module
+  - name: BigClown Core Module
+  - name: BigClown Mini Battery Module
