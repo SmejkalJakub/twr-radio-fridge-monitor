@@ -2,4 +2,6 @@ obj/
 out/
 .gitmodules
 .DS_Store
-*.bin
+firmware.bin
+.pio/
+.vscode/
