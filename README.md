@@ -2,7 +2,7 @@
 
 # Firmware for monitoring fridge activity and overfreezing
 
-[![Travis](https://img.shields.io/travis/bigclownprojects/bcf-radio-fridge-monitor/master.svg)](https://travis-ci.org/bigclownprojects/bcf-radio-fridge-monitor)
+[![build](https://github.com/hardwario/twr-radio-fridge-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/hardwario/twr-radio-fridge-monitor/actions/workflows/main.yml)
 [![Release](https://img.shields.io/github/release/bigclownprojects/bcf-radio-fridge-monitor.svg)](https://github.com/bigclownprojects/bcf-radio-fridge-monitor/releases)
 [![License](https://img.shields.io/github/license/bigclownprojects/bcf-radio-fridge-monitor.svg)](https://github.com/bigclownprojects/bcf-radio-fridge-monitor/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/hardwario_en.svg?style=social&label=Follow)](https://twitter.com/hardwario_en)
